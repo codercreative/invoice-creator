@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css link -->
+    <link rel="stylesheet" href="index.css" />
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Invoice Creator</title>
+  </head>
+  <body>
+    <header class="container outer-header">
+      <div class="inner-container inner-header">
+        <h1 class="title">Invoice Creator</h1>
+        <p class="subtitle">Thanks for choosing GoodCorp, LLC!</p>
+      </div>
+    </header>
+    <main>
+      <section class="container">
+        <div class="inner-container task-buttons-container" id="btn-container">
+          <!-- task buttons -->
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="inner-container task-cat">
+          <p>TASK</p>
+          <p>TOTAL</p>
+        </div>
+
+        <div id="selected-items-container">
+          <!-- cart items -->
+        </div>
+
+        <div class="horizontal-line"></div>
+
+        <div class="inner-container task-cat" >
+          <p>NOTES</p>
+          <p>TOTAL AMOUNT</p>
+        </div>
+
+        <div class="inner-container task-cat notes">
+          <p id="note">We accept cash, credit card, or PayPal</p>
+          <p class="total-amount" id="total-amount">$0</p>
+        </div>
+          
+        </div>
+
+        <div class="inner-container">
+          <button id="send-btn" class="send-btn">
+            <i class="fa-solid fa-envelope" id="send"></i>Send invoice
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
